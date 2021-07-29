@@ -20,7 +20,7 @@ Simple ray casting simulation that shows how rays of light would behave dependin
 
 ### Dependencies
 
-SFML 2.5.1 or later is required in order to run this program. You can install SFML here: https://www.sfml-dev.org/download/sfml/2.5.1/
+SFML (Simple and Fast Multi-Media Library) 2.5.1 or later is required in order to run this program. You can install SFML here: https://www.sfml-dev.org/download/sfml/2.5.1/
 
 ### Installing
 
