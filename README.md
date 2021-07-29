@@ -33,7 +33,7 @@ SFML 2.5.1 or later is required in order to run this program. You can install SF
 ## Authors
 
 Zachary Chi
-chi.zachary@gmail.com
+zachchi@tamu.edu
 
 ## License
 
