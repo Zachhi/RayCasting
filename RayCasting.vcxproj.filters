@@ -13,35 +13,50 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\line">
+      <UniqueIdentifier>{5028e3a6-6193-4818-9ce0-f39595e703cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\light">
+      <UniqueIdentifier>{f24129d7-95c7-4ae1-ab08-558619c63897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\wall">
+      <UniqueIdentifier>{7e9fe36b-9b89-4743-8bf7-d04c0a108778}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\line\line.cpp">
+      <Filter>Source Files\line</Filter>
+    </ClCompile>
+    <ClCompile Include="src\light\lightRay.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\light\lightSource.cpp">
+      <Filter>Source Files\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wall\wall.cpp">
+      <Filter>Source Files\wall</Filter>
+    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\wall.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\line.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lightSource.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\lightRay.cpp">
+    <ClCompile Include="src\simulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\wall.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\line\line.h">
+      <Filter>Source Files\line</Filter>
     </ClInclude>
-    <ClInclude Include="src\line.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\light\lightRay.h">
+      <Filter>Source Files\light</Filter>
     </ClInclude>
-    <ClInclude Include="src\lightSource.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="src\light\lightSource.h">
+      <Filter>Source Files\light</Filter>
     </ClInclude>
-    <ClInclude Include="src\lightRay.h">
+    <ClInclude Include="src\wall\wall.h">
+      <Filter>Source Files\wall</Filter>
+    </ClInclude>
+    <ClInclude Include="src\simulation.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

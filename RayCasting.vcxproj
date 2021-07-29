@@ -18,6 +18,21 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\light\lightRay.cpp" />
+    <ClCompile Include="src\light\lightSource.cpp" />
+    <ClCompile Include="src\line\line.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\simulation.cpp" />
+    <ClCompile Include="src\wall\wall.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\light\lightRay.h" />
+    <ClInclude Include="src\light\lightSource.h" />
+    <ClInclude Include="src\line\line.h" />
+    <ClInclude Include="src\simulation.h" />
+    <ClInclude Include="src\wall\wall.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -144,19 +159,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="src\lightRay.cpp" />
-    <ClCompile Include="src\lightSource.cpp" />
-    <ClCompile Include="src\line.cpp" />
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\wall.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\lightRay.h" />
-    <ClInclude Include="src\lightSource.h" />
-    <ClInclude Include="src\line.h" />
-    <ClInclude Include="src\wall.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

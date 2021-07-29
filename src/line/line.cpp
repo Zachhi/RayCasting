@@ -46,22 +46,22 @@ Line::~Line()
 
 }
 
-void Line::move(sf::Vector2f point)
+void Line::move(sf::Vector2f point) //move the line
 {
 	p1 = point;
 	calculateEndPoints();
 	lineRect.setPosition(p1);
 }
-void Line::setLength(float len)
+void Line::setLength(float len) //set the lines length
 {
 	lineRect.setSize(sf::Vector2f(len, thickness));
 }
-void Line::setEndPoint(sf::Vector2f point)
+void Line::setEndPoint(sf::Vector2f point) //set the lines endpoint. will need when we calculate the lines intersections
 {
 	p2 = point;
 	lineRect.setSize(sf::Vector2f(sqrt(pow(float(p2.x - p1.x), 2) + pow(float(p2.y - p1.y), 2)), thickness));
 }
-void Line::calculateEndPoints()
+void Line::calculateEndPoints() //calculate the endpoint depending on the first point, angle, and length of line
 {
 	float hypotenuse = sqrt(pow(lineRect.getSize().x, 2) + pow(lineRect.getScale().y, 2));
 	if (angle >= 0 && angle <= 90)
@@ -85,13 +85,13 @@ void Line::calculateEndPoints()
 		p2.y = p1.y - sin((360 - angle) * RAD) * hypotenuse;
 	}
 }
-float Line::getMagnitude(sf::Vector2f px)
+float Line::getMagnitude(sf::Vector2f px) //return length of line
 {
 	float magnitude = (sqrt(pow(float(px.x - p1.x), 2) + pow(float(px.y - p1.y), 2)));
 	return magnitude;
 }
 
-void Line::draw(sf::RenderWindow& window)
+void Line::draw(sf::RenderWindow& window) //draw line
 {
 	window.draw(lineRect);
 }

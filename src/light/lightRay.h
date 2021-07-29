@@ -1,11 +1,8 @@
 #ifndef LIGHTRAY_H
 #define LIGHTRAY_H
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include <stdlib.h> 
-#include <math.h>
-#include "line.h"
-#include "wall.h"
+#include "../line/line.h"
+#include "../wall/wall.h"
 
 class LightRay
 {

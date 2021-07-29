@@ -16,7 +16,7 @@ LightSource::~LightSource()
 {
 
 }
-void LightSource::setNumRay(int num)
+void LightSource::setNumRay(int num) //update the number of rays the source has
 {
 	rayCount = num;
 	lightRays.clear();
@@ -26,14 +26,14 @@ void LightSource::setNumRay(int num)
 		lightRays.push_back(ray);
 	}
 }
-void LightSource::move(sf::Vector2f position)
+void LightSource::move(sf::Vector2f position) //move the source to new position
 {
 	for (int i = 0; i < rayCount; i++)
 	{
 		lightRays[i].move(position);
 	}
 }
-void LightSource::checkWalls(std::vector<Wall>& walls)
+void LightSource::checkWalls(std::vector<Wall>& walls) //update it with the walls 
 {
 	float currMinimum;
 	for (auto& ray : lightRays)
@@ -46,7 +46,7 @@ void LightSource::checkWalls(std::vector<Wall>& walls)
 				currMinimum = hold;
 		}
 	}
-	if (walls.size() < 1)
+	if (walls.size() < 1) //reset rays if no walls
 	{
 		for (int i = 0; i < rayCount; i++)
 			lightRays[i].resetRays();

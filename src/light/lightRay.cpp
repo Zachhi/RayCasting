@@ -12,17 +12,17 @@ LightRay::LightRay(sf::Vector2f position, float angle) : line(position, angle, 1
     disToBorders = sqrt(pow(SX, 2) + pow(SY, 2));
     currDis = disToBorders;
 }
-void LightRay::move(sf::Vector2f position)
+void LightRay::move(sf::Vector2f position) //move the ray to new position
 {
 	this->position = position;
 	line.move(position);
 }
-void LightRay::resetRays()
+void LightRay::resetRays() //reset rays when walls are cleared
 {
     line.setLength(disToBorders);
     currDis = disToBorders;
 }
-float LightRay::checkCollision(Wall& wall, float currMinimum)
+float LightRay::checkCollision(Wall& wall, float currMinimum) //check if and where the light ray will collide with the wall
 {
     float x1 = line.getPoint1().x;
     float y1 = line.getPoint1().y;
@@ -81,7 +81,7 @@ float LightRay::checkCollision(Wall& wall, float currMinimum)
     return currMinimum;
 }
 
-void LightRay::drawAll(sf::RenderWindow& window)
+void LightRay::drawAll(sf::RenderWindow& window) //draw the line when we have to draw every ray
 {
     sf::Color lB(204, 255, 229);
     if (currDis == disToBorders)
@@ -91,7 +91,7 @@ void LightRay::drawAll(sf::RenderWindow& window)
 
 	line.draw(window);
 }
-void LightRay::drawCollisions(sf::RenderWindow& window)
+void LightRay::drawCollisions(sf::RenderWindow& window) //draw the line when we only draw intersection rays
 {
     sf::Color lB(204, 255, 229);
     if (currDis == disToBorders)
