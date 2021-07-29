@@ -4,7 +4,7 @@ Simple ray casting simulation that shows how rays of light would behave dependin
 
 ## Controls
 
-* Click once for the starting position a wall, click a second time for the ending position of the wall
+* Click twice to draw a wall from the first click to the second click
 * "C" to clear all walls
 * Move mouse around to change light source position
 * "Space" to change the source type. 
