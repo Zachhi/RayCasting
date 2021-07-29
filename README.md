@@ -2,6 +2,8 @@
 
 Simple ray casting simulation that shows how rays of light would behave depending on its source location and the walls around it
 
+## Demo
+
 ## Controls
 
 * Click twice to draw a wall from the first click to the second click
