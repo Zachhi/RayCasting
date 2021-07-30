@@ -34,8 +34,14 @@ Simple ray casting simulation that shows how rays of light would behave dependin
 * Download the source code from github, or clone the repository into Visual Studio
 * Import into Visual Studio
 * Build according to your need (x86 or x64)
-* A simple 5 minute tutorial for linking SFML with a Visual Studio project can be found here: https://www.youtube.com/watch?v=YfMQyOw1zik
-* Click the run button at your top and the program should start
+* In project settings
+  * Add the `/path/to/sfml/include` to your c++ include path
+  * Add the `/path/to/sfml/libray` to the linker library path
+  * Link the following sfml libraries: `sfml-graphics.lib, sfml-windows.lib, sfml-system.lib, sfml-audio.lib`
+  * Link the following debug libraries: `sfml-graphics-d.lib, sfml-windows-d.lib, sfml-system-d.lib, sfml-audio-d.lib`
+  * Copy the sfml dlls (in the `sfml/bin` folder) to your project folder
+* If that is too hard to follow, a simple 5 minute tutorial for linking SFML with a Visual Studio project can be found here: https://www.youtube.com/watch?v=YfMQyOw1zik
+* Click the run button at the top and the program should start
 
 ## Authors
 
