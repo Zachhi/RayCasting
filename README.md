@@ -2,7 +2,7 @@
 
 Simple ray casting simulation that shows how rays of light would behave depending on its source location and the walls around it
 
-**Note: If you do not have access to Visual Studio, here is a version that works for linux and windows: https://github.com/Zachhi/RayCasting-Linux**
+**Note: If you do not have access to Visual Studio, here is a version that works for linux and windows that requires no setup: https://github.com/Zachhi/RayCasting-Linux**
 
 ## Demo
 
@@ -42,6 +42,8 @@ Simple ray casting simulation that shows how rays of light would behave dependin
   * Copy the sfml dlls (in the `sfml/bin` folder) to your project folder
 * If that is too hard to follow, a simple 5 minute tutorial for linking SFML with a Visual Studio project can be found here: https://www.youtube.com/watch?v=YfMQyOw1zik
 * Click the run button at the top and the program should start
+
+**If you would prefer not having to link libraries, and would prefer a version fully set up, see the link at the top**
 
 ## Authors
 
