@@ -6,9 +6,8 @@ Simple ray casting simulation that shows how rays of light would behave dependin
 
 ## Demo
 
-https://www.youtube.com/watch?v=1HEwamA6FP8
-
 ![Alt Text](https://github.com/Zachhi/RayCasting-VS/blob/master/rayCastingDemo.gif)
+https://www.youtube.com/watch?v=1HEwamA6FP8
 
 ## Controls
 
